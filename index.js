@@ -36,6 +36,7 @@ app.use(
 );
 
 app.use("/chats", require("./routes/chats"));
+app.use("/users", require("./routes/user"));
 
 app.get("/reqcount", (req, res) => {
   if (req.session.count) {
